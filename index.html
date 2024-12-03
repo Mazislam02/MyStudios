@@ -3,39 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Studio</title> <!-- Changed title here -->
+    <title>MyStudio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <h1>My Studio</h1> <!-- Changed text here -->
+        <h1>Welcome to MyStudio</h1>
+        <p>Your photography journey begins here!</p>
     </header>
 
     <!-- Navigation Menu -->
     <nav class="navbar">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Gallery</a>
+                <ul class="dropdown">
+                    <li><a href="#">Nature</a></li>
+                    <li><a href="#">Portraits</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </nav>
 
     <!-- Home Section -->
-    <section id="home" class="welcome">
-        <h2>Welcome to My Photography Studio!</h2>
-        <p>I'm so glad you're here! Whether you're looking to capture beautiful landscapes, intimate portraits, or special moments, my studio is the place to bring your vision to life. Explore the gallery and get a glimpse of the world through my lens. Every picture tells a unique story, and I can't wait to share these moments with you!</p>
-        <p>Feel free to explore my work, and if you have any questions or need a personalized shoot, don't hesitate to reach out. I'm here to help make your vision come true. Enjoy your visit, and thank you for stopping by!</p>
+    <section id="home" class="home">
+        <h2>Welcome to MyStudio</h2>
+        <p>Explore stunning photography and beautiful moments captured just for you.</p>
     </section>
 
     <!-- Slider Section -->
     <div class="slider">
         <div class="slides">
-            <img src="https://via.placeholder.com/800x400?text=Photo+1" alt="Slide 1">
-            <img src="https://via.placeholder.com/800x400?text=Photo+2" alt="Slide 2">
-            <img src="https://via.placeholder.com/800x400?text=Photo+3" alt="Slide 3">
-            <img src="https://via.placeholder.com/800x400?text=Photo+4" alt="Slide 4">
+            <!-- Updated Images for Slider -->
+            <img src="file-G9bDjjpVHQ3vitgd5hywiV.jpg" alt="Slide 1">
+            <img src="file-1DYCmtQogXLHtMJzA2GbuR.jpg" alt="Slide 2">
+            <img src="pexels-felix-antoine-coutu-174902-29573255.jpg" alt="Slide 3">
+            <!-- You can add more images here -->
         </div>
         <div class="slider-controls">
             <button id="prev">❮</button>
@@ -44,31 +50,23 @@
     </div>
 
     <!-- Gallery Section -->
-    <section id="gallery">
+    <section id="gallery" class="gallery">
         <h2>Gallery</h2>
-        <p>Explore beautiful nature and portrait photography.</p>
+        <p>Explore my latest works in photography.</p>
+        <!-- Gallery images can be placed here -->
     </section>
 
     <!-- About Me Section -->
-    <section id="about">
+    <section id="about" class="about">
         <h2>About Me</h2>
-        <p>Hi, I'm a passionate photographer who loves capturing moments of nature and portraits. Thank you for visiting my site!</p>
+        <p>I'm a passionate photographer capturing the beauty of the world around us. Join me in discovering the magic of photography!</p>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to reach out to me via email or social media!</p>
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for any inquiries or bookings!</p>
     </section>
-
-    <!-- Calculator -->
-    <div class="calculator">
-        <h2>Gas Mileage Calculator</h2>
-        <input type="number" id="miles" placeholder="Miles Traveled">
-        <input type="number" id="gallons" placeholder="Gallons of Gas Used">
-        <button onclick="calculateMPG()">Calculate MPG</button>
-        <p id="result"></p>
-    </div>
 
     <script src="main.js"></script>
 </body>
