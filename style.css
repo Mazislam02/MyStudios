@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #87CEEB; /* Sky Blue background */
+    scroll-behavior: smooth; /* Enable smooth scrolling */
 }
 
 /* Header */
@@ -42,21 +43,6 @@ header {
     background-color: #555;
 }
 
-/* Dropdown */
-.dropdown {
-    display: none;
-    position: absolute;
-    background-color: #666;
-    top: 100%;
-    left: 0;
-    min-width: 150px;
-    z-index: 1000;
-}
-
-.navbar li:hover .dropdown {
-    display: block;
-}
-
 /* Welcome Section */
 .welcome {
     text-align: center;
@@ -75,6 +61,33 @@ header {
 .welcome p {
     font-size: 18px;
     color: #555;
+}
+
+/* Gallery Section */
+#gallery {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section */
+#about {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+#contact {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Slider */
