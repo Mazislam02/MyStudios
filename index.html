@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Website - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Photography Website</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Gallery</a>
+                <ul class="dropdown">
+                    <li><a href="#">Nature</a></li>
+                    <li><a href="#">Portraits</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Slider -->
+    <div class="slider">
+        <div class="slides">
+            <img src="https://via.placeholder.com/800x400?text=Photo+1" alt="Slide 1">
+            <img src="https://via.placeholder.com/800x400?text=Photo+2" alt="Slide 2">
+            <img src="https://via.placeholder.com/800x400?text=Photo+3" alt="Slide 3">
+        </div>
+        <div class="slider-controls">
+            <button id="prev">❮</button>
+            <button id="next">❯</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
