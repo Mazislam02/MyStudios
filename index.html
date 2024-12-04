@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Studio</title>
+    <title>My Studio</title> <!-- Title of the page -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <h1>My Studio</h1>
+        <h1>My Studio</h1> <!-- Changed text here -->
     </header>
 
     <!-- Navigation Menu -->
@@ -52,14 +52,46 @@
     <!-- About Me Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>Hi, I'm a passionate photographer with a love for capturing the beauty of nature and human expression. Through my lens, I strive to tell stories that evoke emotions and memories. Whether it's a vibrant sunset or an intimate portrait, each photograph is a testament to the moments that make life special. Thank you for visiting my studio and for supporting my work!</p>
+        <p>Hi, I'm a passionate photographer who loves capturing moments of nature and portraits. Thank you for visiting my site!</p>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact</h2>
-        <p>Feel free to reach out to me via email or through the form below. I would love to hear from you!</p>
         <p>Email: <a href="mailto:mazharulmarzan20@gmail.com">mazharulmarzan20@gmail.com</a></p>
+        <p>Feel free to reach out to me via email or social media!</p>
 
         <!-- Contact Form -->
-        <form action="
+        <form id="contact-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <label for="comment">Your Message:</label>
+            <textarea id="comment" name="comment" placeholder="Your message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- MPG Calculator -->
+    <section id="calculator">
+        <h2>Calculate Your Miles Per Gallon (MPG)</h2>
+        <div>
+            <label for="miles">Miles Traveled:</label>
+            <input type="number" id="miles" placeholder="Enter miles" required>
+        </div>
+
+        <div>
+            <label for="gallons">Gallons of Gas Used:</label>
+            <input type="number" id="gallons" placeholder="Enter gallons" required>
+        </div>
+
+        <button onclick="calculateMPG()">Calculate MPG</button>
+
+        <p id="result"></p>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
