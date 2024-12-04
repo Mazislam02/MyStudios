@@ -1,135 +1,98 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #87CEEB; /* Sky Blue background */
-    scroll-behavior: smooth; /* Enable smooth scrolling */
-}
-
-/* Header */
-header {
-    background: #333;
-    color: white;
-    padding: 10px 0;
+    background-color: #f4f4f4;
     text-align: center;
 }
 
-/* Navigation Menu */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
 .navbar {
     background-color: #444;
-    overflow: hidden;
+    padding: 10px;
 }
 
 .navbar ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
-    margin: 0;
-    display: flex;
 }
 
-.navbar li {
-    position: relative;
+.navbar ul li {
+    display: inline-block;
+    margin: 0 10px;
 }
 
 .navbar a {
-    display: block;
     color: white;
     text-decoration: none;
-    padding: 14px 20px;
+    font-size: 18px;
 }
 
-.navbar a:hover {
-    background-color: #555;
-}
-
-/* Welcome Section */
-.welcome {
-    text-align: center;
-    margin: 20px auto;
+#home, #gallery, #about, #contact, #calculator {
     padding: 20px;
-    background: #fff;
+    margin: 20px 0;
+    background-color: white;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.welcome h2 {
-    font-size: 24px;
+h2 {
     color: #333;
 }
 
-.welcome p {
-    font-size: 18px;
-    color: #555;
-}
-
-/* Gallery Section */
-#gallery {
-    background-color: #fff;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* About Section */
-#about {
-    background-color: #fff;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Contact Section */
-#contact {
-    background-color: #fff;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Slider */
-.slider {
-    max-width: 100%;
-    margin: 20px auto;
-    position: relative;
-    overflow: hidden;
-}
-
-.slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slides img {
-    width: 100%;
-}
-
-.slider-controls {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-}
-
-.slider-controls button {
-    background-color: rgba(0, 0, 0, 0.5);
+button {
+    padding: 10px 20px;
+    background-color: #333;
     color: white;
     border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Calculator Styling */
+#calculator input, #calculator button {
+    width: 100%;
     padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+#calculator p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+form {
+    text-align: left;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 400px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
     cursor: pointer;
 }
 
-/* Calculator */
-.calculator {
-    max-width: 400px;
-    margin: 20px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+form button:hover {
+    background-color: #555;
 }
