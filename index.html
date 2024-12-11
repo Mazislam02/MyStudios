@@ -21,6 +21,7 @@
             <li><a href="#contact">Contact</a></li>
             <li><a href="#calculator">MPG Calculator</a></li>
             <li><a href="#mortgage-calculator">Mortgage Calculator</a></li>
+            <li><a href="#invoice-form">Invoice Form</a></li>
         </ul>
     </nav>
 
@@ -30,29 +31,33 @@
         <p>Capture beautiful moments and explore the world through my lens.</p>
     </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <p>Explore beautiful nature and portrait photography.</p>
-    </section>
-
-    <!-- About Me Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I'm a passionate photographer who loves capturing moments of nature and portraits. Thank you for visiting my site!</p>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <form id="contact-form">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            <label for="comment">Your Message:</label>
-            <textarea id="comment" name="comment" placeholder="Your message" required></textarea>
-            <button type="submit">Submit</button>
+    <!-- Invoice Section -->
+    <section id="invoice-form">
+        <h2>Calculate Your Invoice</h2>
+        <form id="calculation-form">
+            <div>
+                <label for="product">Select Product:</label>
+                <select id="product">
+                    <option value="100">Photo Printing ($100)</option>
+                    <option value="200">Album Design ($200)</option>
+                    <option value="50">Photo Editing ($50)</option>
+                    <option value="150">Event Photography ($150)</option>
+                </select>
+            </div>
+            <div>
+                <label for="services">Select Service:</label>
+                <select id="services">
+                    <option value="30">Basic Photo Retouching ($30)</option>
+                    <option value="100">Wedding Package ($100)</option>
+                    <option value="50">Lifestyle Shoot ($50)</option>
+                </select>
+            </div>
+            <div>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" min="1" value="1" required>
+            </div>
+            <button type="button" onclick="calculateInvoice()">Calculate Total</button>
+            <p id="invoice-result"></p>
         </form>
     </section>
 
